@@ -1,16 +1,20 @@
 <template>
   <div id="app">
-    <NavBar msg="Welcome"></NavBar>
+    <NavbarComponent msg="Welcome"></NavbarComponent>
+    <LandingComponent msg="Welcome"></LandingComponent>
   </div>
+  
 </template>
 
 <script>
-import NavBar from './components/NavBar.vue'
+import NavbarComponent from './components/NavbarComponent.vue'
+import LandingComponent from './components/LandingComponent.vue'
 
 export default {
   name: "App",
   components: {
-    NavBar,
+    NavbarComponent,
+    LandingComponent
   }
 }
 </script>
@@ -22,5 +26,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background-color: black;
 }
 </style>
