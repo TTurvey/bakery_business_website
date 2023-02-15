@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <WelcomeComponent msg="Welcome"></WelcomeComponent>
     <NavbarComponent msg="Welcome"></NavbarComponent>
     <LandingComponent msg="Welcome"></LandingComponent>
   </div>
@@ -7,13 +8,15 @@
 </template>
 
 <script>
-import NavbarComponent from './components/NavbarComponent.vue'
+import WelcomeComponent from './components/WelcomeComponent.vue'
+// import NavbarComponent from './components/NavbarComponent.vue'
 import LandingComponent from './components/LandingComponent.vue'
 
 export default {
   name: "App",
   components: {
-    NavbarComponent,
+    WelcomeComponent,
+    // NavbarComponent,
     LandingComponent
   }
 }
