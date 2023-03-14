@@ -5,7 +5,7 @@
       <div class="row">
         <div class="hero-container">
           <div class="hero-image animate pop delay-1" >
-            <img class="hidden" src='../../src/assets/nick-karvounis-jN_M0McVNeI-unsplash.jpg' alt="" title="">
+            <img class="hidden" src='../../src/assets/dana-nestorova-6_wAPQxXJQ4-unsplash.jpg' alt="" title="">
           </div>
           <div class="hero-container__inner hero-container__inner--content" scroll-fade="">
             <h2 class="hero-trumpet animate pop delay-2">Mmmmm...</h2>
@@ -20,15 +20,13 @@
         <div class="block col-sm-6 col-xs-12">
           <div class="block__inner">
             <!-- link to menu to be completed -->
-            <a class="block-link" href="" title="MENU">
+            <a class="block-link" href="" title="CAREERS">
               <div class="block-cover">
-                <h3 class="block-cover-headline">MENU</h3>
+                <h3 class="block-cover-headline">CAREERS</h3>
               </div>
-              <!-- style=background-image doesn't work here but dont know why. -->
-              <!-- If it is moved to the bloack-image css class then every block-image shows the same image. -->
-              <div class="block-image" style="background-image: url('../../src/assets/rodolfo-marques-GzBO_o0RvEg-unsplash.jpg');">
-                <img class="hidden" src='../../src/assets/mae-mu-Emhz3miT6mo-unsplash.jpg' alt="">
-              </div>
+              <div class="block-image" id="block-careers">
+                <img class="hidden" src='../../src/assets/tetiana-padurets-I5G_suhoqBQ-unsplash.jpg' alt="">
+              </div>       
             </a>
           </div>
         </div>
@@ -40,19 +38,64 @@
               <div class="block-cover">
                 <h3 class="block-cover-headline">ABOUT US</h3>
               </div>
-              <!-- style=background-image doesn't work here but dont know why. -->
-              <!-- If it is moved to the bloack-image css class then every block-image shows the same image. -->
-              <div class="block-image" style="background-image: url('../../src/assets/rodolfo-marques-GzBO_o0RvEg-unsplash.jpg');">
-                <img class="hidden" src='../../src/assets/rodolfo-marques-GzBO_o0RvEg-unsplash.jpg' alt="">
+              <div class="block-image" id="block-aboutus">
+                <img class="hidden" src='../../src/assets/raul-angel-OnyIaAKUJfI-unsplash.jpg' alt="">
               </div>       
             </a>
           </div>
         </div>
+      </div>
+
+      <div class="block ">
+          <div class="block__inner">
+            <a class="block-link" href="" title="FIND A STORE">
+              <div class="block-cover">
+                <h3 class="block-cover-headline">FIND A STORE</h3>
+              </div>
+              <div class="block-image" id="block-findastore">
+                <img class="hidden" src='../../src/assets/nick-karvounis-jN_M0McVNeI-unsplash.jpg' alt="">
+              </div>
+            </a>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="block col-sm-6 col-xs-12">
+          <div class="block__inner">
+            <!-- link to menu to be completed -->
+            <a class="block-link" href="" title="MENU">
+              <div class="block-cover">
+                <h3 class="block-cover-headline">MENU</h3>
+              </div>
+              <div class="block-image" id="block-menu">
+                <!-- <img class="hidden" src='../../src/assets/eaters-collective-Gg5-K-mJwuQ-unsplash.jpg' alt=""> -->
+                <img class="hidden" src='../../src/assets/edward-howell-blGXrrVe1AU-unsplash.jpg' alt="">
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="block col-sm-6 col-xs-12">
+          <div class="block__inner">
+            <a class="block-link" href="" title="CONTACT US">
+              <div class="block-cover">
+                <h3 class="block-cover-headline">CONTACT US</h3>
+              </div>
+              <div class="block-image" id="block-contactus">
+                <img class="hidden" src='../../src/assets/edward-howell-blGXrrVe1AU-unsplash.jpg' alt="">
+              </div>
+            </a>
+          </div>
+        </div> 
+
+
 
       </div>
+      
     </div>
   </div>
 
+  
 </template>
 
 <script>
@@ -64,7 +107,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .hidden {
-  display: none!important;
+  display: none !important;
 }
 
 img {
@@ -115,7 +158,7 @@ img {
   height: 100%;
   width: 100%;
   border: 1px solid red;
-  background-image: url('../../src/assets/nick-karvounis-jN_M0McVNeI-unsplash.jpg');
+  background-image: url('../../src/assets/dana-nestorova-6_wAPQxXJQ4-unsplash.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -136,9 +179,19 @@ img {
 }
 
 .hero-container__inner--content .hero-headline {
-  font-size: 72px;
+  font-size: 100px;
+  font-weight: bolder;
   line-height: 1.2;
-  letter-spacing: 2px
+  letter-spacing: 2px;
+  text-shadow:
+    0.01em 0 rgb(60, 60, 60),
+    0 0.01em rgb(190, 190, 190),
+    -0.01em 0 rgb(190, 190, 190),
+    0 -0.01em rgb(190, 190, 190),
+    -0.01em -0.01em rgb(190, 190, 190),
+    -0.01em 0.01em rgb(190, 190, 190),
+    0.01em -0.01em rgb(190, 190, 190),
+    0.01em 0.01em rgb(190, 190, 190)
 }
 
 .btn {
@@ -168,11 +221,18 @@ img {
   border: solid 2px red;
 }
 
+.block__inner {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .block-link {
   position: relative;
   display: block;
   height: 300px;
-  width: 100%
+  width: 100%;
 }
 
 .block-cover {
@@ -193,19 +253,59 @@ img {
 }
 
 .block-image {
+  background: 50%/cover no-repeat;
   height: 100%;
   width: 100%;
   /* background-image: url('../../src/assets/nick-karvounis-jN_M0McVNeI-unsplash.jpg'); */
-  background-size: cover;
+  /* background-size: cover;
   background-position: center;
-  /* background: no-repeat; */
+  background: no-repeat; */
+}
+
+#block-menu {
+  background-image: url('../../src/assets/eaters-collective-Gg5-K-mJwuQ-unsplash.jpg');
+}
+
+#block-aboutus {
+  background-image: url('../../src/assets/raul-angel-OnyIaAKUJfI-unsplash.jpg');
+}
+
+#block-careers {
+  background-image: url('../../src/assets/tetiana-padurets-I5G_suhoqBQ-unsplash.jpg');
+  /* background-image: url('../../src/assets/austin-ban-IS6RwpuEJpY-unsplash.jpg'); */
+}
+
+#block-findastore {
+  background-image: url('../../src/assets/nick-karvounis-jN_M0McVNeI-unsplash.jpg');
+}
+
+#block-contactus {
+  background-image: url('../../src/assets/edward-howell-blGXrrVe1AU-unsplash.jpg');
 }
 
 .col-sm-6, .col-xs-12 {
   position: relative;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+@media (min-width: 768px) {
+  .container {
+      width:750px
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+      width:970px
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+      width:1170px
+  }
 }
 
 </style>

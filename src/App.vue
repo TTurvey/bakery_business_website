@@ -23,7 +23,6 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 #app {
   font-family: Post Grotesk,Open Sans,sans-serif;
@@ -34,7 +33,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #ffffff;
 }
 
 html {
